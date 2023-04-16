@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Learning Center | Computer Training & Certification</title>
+    <link rel="shortcut icon" href="image/title_logo.jpg" type="image">
+    <style>
+        nav {
+            background-color: darkslateblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav>ul {
+            /* nav er immidiate child bujhay. mane nav er     prothom baccha*/
+
+            display: flex;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 10px;
+            margin-left: 20px;
+        }
+
+        nav li:hover {
+            background-color: cornflowerblue;
+            border-radius: 5px;
+        }
+
+        nav li a {
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: cornflowerblue;
+            padding: 0;
+        }
+
+        .dropdown li {
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .dropdown a:hover {
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        nav>ul>li:hover>ul {
+            /*nav er 1st child(ul)er 1st child(li)er 1st child(ul)ke hover korar jonno nav er 1st child er 1st child(li)er upor mouse nite hobe*/
+            display: block;
+        }
+
+        p {
+            color: rgb(128, 123, 123);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .app_training {
+            display: flex;
+
+        }
+
+        .logo_link {
+            margin: .1%;
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        .certificate_section {
+            display: flex;
+        }
+
+        .certificate_item {
+            margin: 2px;
+            box-shadow: 10px 20px 20px gray;
+            margin: 20px;
+            padding: 10px;
+            width: 30%;
+            border-radius: 5px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .basic {
+            background-color: beige;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .experience_section {
+            margin: 20px;
+        }
+
+        .exp_title {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .btn {
+            background: gray;
+            border-radius: 5px;
+            border: 1px;
+            margin-left: 500px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            padding: 5px;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        .btn2 {
+            background: green;
+            cursor: pointer;
+            text-align: center;
+            padding-left: 50%;
+            padding-right: 50%;
+            margin: 0;
+            border: 0px;
+            border-radius: 5px;
+            color: aliceblue;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .btn2:hover {
+            background-color: greenyellow;
+        }
+
+        .name {
+            display: flex;
+            border-color: gray;
+
+        }
+
+        .sbmt {
+            cursor: pointer;
+            background-image: linear-gradient(red, salmon);
+            color: aliceblue;
+            border: 0;
+            border-radius: 2px;
+            width: 100%;
+            padding: 10px;
+            margin-top: 50px;
+            font-size: large;
+        }
+
+        .sbmt:hover {
+            background-image: linear-gradient(red, orange);
+        }
+
+        .ftr {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .lst {
+
+            display: flex;
+        }
+
+        .ft {
+            background-color: black;
+            margin-top: 100px;
+
+        }
+
+        .block a {
+            display: block;
+        }
+
+        .inline {
+            display: flex;
+        }
+
+        .inline a {
+            margin: 2px;
+        }
+
+        .inline img {
+            height: 20px;
+            border-radius: 2px;
+        }
+
+        .name div {
+            display: flex;
+            margin-bottom: 10px;
+
+            width: 20%;
+
+        }
+
+        .inputFN {
+            width: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Training and Certifications
+                        <ul class="dropdown">
+                            <li><a href="">Access</a></li>
+                            <li><a href="">exel</a></li>
+                            <li><a href="">Office365</a></li>
+                            <li><a href="">Onenote</a></li>
+                            <li><a href="">Outlook</a></li>
+                            <li><a href="">Powerpoint</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">Publisher</a></li>
+                            <li><a href="">Visio</a></li>
+                            <li><a href="">Word</a></li>
+                            <li><a href="">Teams</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="">Learning Methods
+                        <ul class="dropdown">
+                            <li><a href="">link-1</a></li>
+                            <li><a href="">link-2</a></li>
+                            <li><a href="">link-3</a></li>
+                            <li><a href="">link-4</a></li>
+                            <li><a href="">link-5</a></li>
+                            <li><a href="">link-6</a></li>
+                            <li><a href="">link-7</a></li>
+                            <li><a href="">link-8</a></li>
+                            <li><a href="">link-9</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="">Resources
+                        <ul class="dropdown">
+                            <li><a href="">link-1</a></li>
+                            <li><a href="">link-2</a></li>
+                            <li><a href="">link-3</a></li>
+                            <li><a href="">link-4</a></li>
+                            <li><a href="">link-5</a></li>
+                            <li><a href="">link-6</a></li>
+                            <li><a href="">link-7</a></li>
+                            <li><a href="">link-8</a></li>
+                            <li><a href="">link-9</a></li>
+                            <li><a href="">link-10</a></li>
+                            <li><a href="">link-11</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">Career Training</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome to Computer Learning Center</h1>
+    <article>
+        With 300 centers in 70 countries, Computer Learning Center is the largest independent IT Training Provider in
+        the
+        world, delivering more courses than any other IT training company.
+
+        In addition to our excellent Instructor Lead Training permits ultimate flexibility in training enabling students
+        to gain access to tutors and classes anywhere.
+
+        As a learning solutions provider for many of the industry's top vendors, such as Microsoft and Cisco, New
+        Horizons Dhaka is positioned to offer the latest authorized curriculum delivered by certified instructors to
+        keep you on the cutting edge of technology. Whether you are searching for an answer for the complex training
+        needs of a large, multi-location business, or an individual seeking the skills to excel in a new or expanding
+        career path, New Horizons Dhaka is your integrated learning solution.
+    </article>
+
+    <h1>COURSES</h1>
+    <ul>
+        <li><a href="">ENGLISH LANGUAGE PROGRAM</a></li>
+        <li><a href="">INFORMATION AND COMMUNICATIONS TECHNOLOGY (ICT)</a></li>
+        <li><a href="">DIPLOMA IN COMPUTER FUNDAMENTALS</a></li>
+        <li><a href="">C++ PROGRAMMING</a></li>
+        <li><a href="">JAVA TRAINING</a></li>
+        <li><a href="">ANDROID</a></li>
+        <li><a href="">ADVANCED DIPLOMA - NHINE</a></li>
+        <li><a href="">GRAPHIC DESIGN TRAINING</a></li>
+        <li><a href="">WEB DESIGN AND DEVELOPMENT TRAINING</a></li>
+        <li><a href="">AUTODESK TRAINING</a></li>
+        <li><a href="">NEW HORIZONS ONLINE EARNING PROGRAM</a></li>
+    </ul>
+    <h3>APPLICATIONS TRAINING</h3>
+    <hr color="blue">
+    <div class="app_training">
+        <a href="" class="logo_link"><img src="image/word.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/exel.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/powerpoint.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/outlook.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/access.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/visio.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/Microsoft_Publisher-Logo.wine.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/infopath.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/MS_Project_Logo.png" alt=""></a>
+    </div>
+    <hr color="blue">
+    <h3>TECHNICAL TRAINING</h3>
+    <hr color="bule">
+
+    <div class="app_training">
+        <a href="" class="logo_link"><img src="image/comptia_logo.jpg" alt=""></a>
+        <a href="" class="logo_link"><img src="image/cisco.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/redhat.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/ITIL.jpg" alt=""></a>
+    </div>
+    <div class="app_training">
+        <a href="" class="logo_link"><img src="image/sql.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/adobe.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/java.png" alt=""></a>
+        <a href="" class="logo_link"><img src="image/ITIL.jpg" alt=""></a>
+        <a href="" class="logo_link"><img src="image/vmware.jpg" alt=""></a>
+    </div>
+
+    <section class="certificate_section">
+
+        <div class="certificate_item">
+            <a href="">
+                <h3>Government Certificate</h3>
+            </a>
+            <p>We Provide Bangladesh Technical Board National Skill Standard Basic (360 Hours) 6 (Six) Months Course
+                Training and Govt computer training certificate in Computer Office application and Graphic Design.</p>
+        </div>
+
+        <div class="certificate_item">
+            <a href="">
+                <h3>Female Instructors</h3>
+            </a>
+            <p>We provide FEMALE Teachers and Special accommodation for female students. For Quran Hafiz & Poor student
+                we offer free computer training courses in bangladesh</p>
+        </div>
+
+        <div class="certificate_item">
+            <a href="">
+                <h3>Personal Training</h3>
+            </a>
+            <p>For Job holder, House wife or Weak student, we offer personal training. This service will assure you to
+                get the maximum understanding of your course outline.</p>
+        </div>
+    </section>
+
+    <h2 class="title">Basic Computer Training Course in CSTC</h2>
+
+    <section class="certificate_section">
+        <div class="basic">
+            <p>Looking for a comprehensive basic computer training module that will teach you everything you need to
+                know about using computer? Look no further than CSTC! We provide Government Computer Training
+                Certificate in Bangladesh</p>
+        </div>
+
+        <div class="basic">
+            <p>If you search computer training center near me, you will find Computer Solution and Training Center. We
+                are the best computer learning institute in Farmgate, Dhanmondi, Mohammadpur, Mirpur, Lalmatia,
+                Shyamoli, and Kallyanpur</p>
+        </div>
+
+
+    </section>
+
+    <section class="experience_section">
+        <h1 class="exp_title">A Great Experience</h1>
+
+        <p>My SharePoint class from New Horizons was a great experience. My instructor, Mary, was incredibly
+            knowledgable, and gave us usable examples along with teaching the concepts. I’ve already put my new skills
+            to work.</p>
+    </section>
+    <hr color="gray">
+
+    <button class="btn"><a href="schedule.html">Weekly Schedule Download</a></button><br>
+    <button class="btn2">
+        Upcoming New Batches
+    </button>
+
+    <h2>CONTACT US NOW</h2>
+    <form action="">
+        <span class="name">
+            <div class="inputFN"><input type="text" placeholder="First Name"></div>
+            <div><input type="text" placeholder="Last Name"></div>
+        </span>
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="How can we help you?"><br>
+
+        <fieldset>
+
+            <legend>Select your position</legend>
+            <p>
+                <label for="student">
+                    <input type="radio" name="position" id="student"> Student
+                </label>
+            </p>
+            <p>
+                <label for="sbekar">
+                    <input type="radio" name="position" id="bekar"> Bekar
+                </label>
+            </p>
+            <p>
+                <label for="olosh">
+                    <input type="radio" name="position" id="olosh"> Olosh
+                </label>
+            </p>
+            <p>
+                <label for="atel">
+                    <input type="radio" name="position" id="atel"> Atel
+                </label>
+            </p>
+            <p>
+                <label for="chagol">
+                    <input type="radio" name="position" id="chagol"> Chagoler 3nmbr baccha
+                </label>
+            </p>
+            <p>
+                <label for="fakibaz">
+                    <input type="radio" name="position" id="fakibaz"> Fakibaz
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Select your choice
+            </legend>
+
+            <p><label for="HTML"><input type="checkbox" name="choice" id="HTML">HTML</label></p>
+            <p><label for="HTML5"><input type="checkbox" name="choice" id="HTML5">HTML5</label></p>
+            <p><label for="CSS"><input type="checkbox" name="choice" id="CSS">CSS</label></p>
+            <p><label for="java"><input type="checkbox" name="choice" id="java">Java</label></p>
+            <p><label for="react"><input type="checkbox" name="choice" id="react">react</label></p>
+            <p><label for="bootsrap"><input type="checkbox" name="choice" id="bootstrap">Bootstrap</label></p>
+        </fieldset>
+
+        <p>Say something</p>
+        <textarea name="opinion" id="" cols="30" rows="10"></textarea>
+
+        <button class="sbmt" type="submit"><a href="submit.html">Submit</a></button>
+
+    </form>
+
+
+
+</body>
+
+<footer>
+
+    <section class="ft">
+        <div class="lst">
+            <div class="frt_info">
+                <h2>Applications</h2>
+                <div class="block">
+                    <a href="">Office 365</a>
+                    <a href="">Access</a>
+                    <a href="">Excel</a>
+                    <a href="">InfoPath</a>
+                    <a href="">One Note</a>
+                    <a href="">Outlook</a>
+                    <a href="">PowerPoint</a>
+                    <a href="">Project</a>
+                    <a href="">Publisher</a>
+                    <a href="">Visio</a>
+                    <a href="">Word</a>
+                </div>
+
+                <div class="block">
+                    <a href="">AfterEffects</a>
+                    <a href="">AfterEffects</a>
+                    <a href="">Flash</a>
+                    <a href="">Illustrator</a>
+                    <a href="">Photoshop</a>
+                    <a href="">Premiere</a>
+                    <a href="">NH Computer</a>
+                    <a href="">Fundamentals</a>
+                    <a href="">NH Intl Network</a>
+                    <a href="">Engineer</a>
+                </div>
+            </div>
+            <div>
+                <div class="block">
+                    <a href="">Azure</a>
+                    <a href="">Dynamics CRM</a>
+                    <a href="">Exchange</a>
+                    <a href="">SharePoint</a>
+                    <a href="">Skype for Business</a>
+                    <a href="">SQL Server</a>
+                    <a href="">System Center</a>
+                    <a href="">Visual Studio</a>
+                    <a href="">Windows</a>
+                    <a href="">Windows Server</a>
+                    <a href="">Web Design</a>
+                    <a href="">Development</a>
+                    <a href="">Web Design</a>
+                    <a href="">Specialist</a>
+                    <a href="">E-Commerce</a>
+                    <a href="">Specialist</a>
+                    <a href="">PHP & MySQL</a>
+                </div>
+                <div class="block">
+                    <a href="">Cisco</a>
+                    <a href="">Cloud and Big Data</a>
+                    <a href="">CompTIA</a>
+                    <a href="">ITIL</a>
+                    <a href="">Java</a>
+                    <a href="">Oracle</a>
+                    <a href="">Programming C/C++</a>
+                    <a href="">Red Hat</a>
+                    <a href="">VMware</a>
+                    <a href="">AutoDesk</a>
+                    <a href="">AutoDesk</a>
+                    <a href="">3DsMax</a>
+                </div>
+            </div>
+            <div class="block">
+                <a href="">English Language Program</a>
+                <a href="">Online Earning</a>
+                <a href="">Business Skills</a>
+                <a href="">Project Management</a>
+                <a href="">Project Management</a>
+            </div>
+            <div class="block">
+
+                <a href="">>Computer Learning Center</a>
+                <a href=""> X Plaza, 3rd. Flr., House #7, Road #4 <br>
+                    chittagong, Bangladesh</a>
+                <a href="">+018********</a>
+                <a href=""> Email NH Chittagong</a>
+                <div class="inline">
+                    <a href=""><img src="image/New folder/Twitter.png" alt=""></a>
+                    <a href=""><img src="image/New folder/googleplus.png" alt=""></a>
+                    <a href=""><img src="image/New folder/linkedIn.png" alt=""></a>
+                    <a href=""><img src="image/New folder/fb.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <p class="ftr">© Copyright 2023 by Computer Learning Center</p>
+
+
+    </section>
+
+
+
+</footer>
+
+</html>
